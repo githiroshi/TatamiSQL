@@ -1,6 +1,10 @@
 # TatamiSQL
 
-TatamiSQL is a database client designed for databases running in local development environments. MySQL is currently supported.
+TatamiSQL is a database client designed for databases running in local development environments. 
+
+<img width="1512" height="1112" alt="スクリーンショット 2026-07-06 20 47 08" src="https://github.com/user-attachments/assets/0522a429-d66a-435c-9941-84a99173d834" />
+
+MySQL is currently supported.
 
 Download the latest version from [TatamiSQL GitHub Releases](https://github.com/githiroshi/TatamiSQL/releases).
 
