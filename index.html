@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TatamiSQL is an SQL client designed for simple, intuitive use."
+    />
+    <meta name="theme-color" content="#f5f4ed" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="TatamiSQL — A lightweight SQL client" />
+    <meta
+      property="og:description"
+      content="Make SQL feel lighter with simple, intuitive controls."
+    />
+    <meta name="twitter:card" content="summary" />
+    <title>TatamiSQL — A lightweight SQL client</title>
+    <link rel="alternate" hreflang="en" href="./index.html" />
+    <link rel="alternate" hreflang="ja" href="./ja/index.html" />
+    <link rel="alternate" hreflang="x-default" href="./index.html" />
+    <link rel="icon" href="./assets/tatamisql-icon.png" />
+    <link rel="apple-touch-icon" href="./assets/tatamisql-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="TatamiSQL home">
+          <img
+            class="brand-icon"
+            src="./assets/tatamisql-icon.png"
+            width="38"
+            height="38"
+            alt=""
+          />
+          <span>TatamiSQL</span>
+        </a>
+
+        <div class="header-actions">
+          <nav class="header-nav" aria-label="Main navigation">
+            <a href="#features">Features</a>
+            <a
+              href="https://github.com/githiroshi/TatamiSQL"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </nav>
+          <nav class="language-switcher" aria-label="Language">
+            <a
+              href="./index.html"
+              lang="en"
+              hreflang="en"
+              class="active"
+              aria-current="page"
+            >
+              English
+            </a>
+            <a href="./ja/index.html" lang="ja" hreflang="ja">日本語</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Desktop SQL client</p>
+            <h1><em>Make SQL feel lighter.</em></h1>
+            <p class="hero-description">
+              TatamiSQL is an SQL client designed for simple, intuitive use.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://github.com/githiroshi/TatamiSQL/releases/latest"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="apple-mark" aria-hidden="true">●</span>
+                Download for macOS
+                <span class="button-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="text-link" href="#features">
+                Explore features <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+            <p class="release-note">Alpha version / Supports MySQL and PostgreSQL</p>
+          </div>
+
+          <div class="preview-wrap">
+            <div class="preview-glow" aria-hidden="true"></div>
+            <video
+              class="product-video"
+              src="./assets/tatami-preview.mp4"
+              aria-label="TatamiSQL application demo"
+              autoplay
+              controls
+              loop
+              muted
+              playsinline
+              preload="metadata"
+            >
+              Your browser does not support MP4 video.
+            </video>
+            <p class="preview-caption">
+              <span></span> Product demo
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">CORE FEATURES</p>
+            <h2 id="features-title">Make SQL more intuitive with mouse controls.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">01</div>
+              <h3>Build JOINs with your mouse</h3>
+              <p>
+                Double-click a table name and choose a suggestion. Add a JOIN clause
+                with its condition to your SQL.
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="./assets/join-picker.png"
+                  width="724"
+                  height="444"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQL JOIN picker showing suggested JOIN clauses"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">02</div>
+              <h3>Choose columns from a list</h3>
+              <p>
+                Double-click the asterisk in SELECT *. Choose the columns you need,
+                and they are applied to the SELECT clause.
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="./assets/column-picker.png"
+                  width="642"
+                  height="556"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQL column picker with selected columns"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">03</div>
+              <h3>Preview cell contents</h3>
+              <p>
+                Double-click a cell to view its contents in a larger window. Easily
+                inspect long text and JSON.
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="./assets/cell-preview.png"
+                  width="826"
+                  height="520"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQL cell preview displaying formatted JSON"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card feature-card-tinted">
+              <div class="feature-icon" aria-hidden="true">04</div>
+              <h3>Group table names</h3>
+              <p>
+                Group tables by shared names. Keep large schemas organized and easier
+                to scan.
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="./assets/table-grouping.png"
+                  width="546"
+                  height="428"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQL table list grouped by shared name prefixes"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="cta-pattern" aria-hidden="true"></div>
+            <img
+              src="./assets/tatamisql-icon.png"
+              width="72"
+              height="72"
+              alt=""
+            />
+            <p class="section-label">GET STARTED</p>
+            <h2>Try TatamiSQL.</h2>
+            <p>Simplify everyday database work with TatamiSQL.</p>
+            <a
+              class="button button-light"
+              href="https://github.com/githiroshi/TatamiSQL/releases/latest"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download for macOS
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#" aria-label="TatamiSQL home">
+          <img
+            class="brand-icon"
+            src="./assets/tatamisql-icon.png"
+            width="32"
+            height="32"
+            alt=""
+          />
+          <span>TatamiSQL</span>
+        </a>
+        <p>© <span id="copyright-year">2026</span> oyajikoumuten</p>
+        <a
+          href="https://github.com/githiroshi/TatamiSQL"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub ↗
+        </a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

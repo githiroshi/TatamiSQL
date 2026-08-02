@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TatamiSQLは、スキーマ確認、クエリ編集、結果操作をひとつの画面にまとめたデスクトップSQLクライアントです。"
+    />
+    <meta name="theme-color" content="#f5f4ed" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content="TatamiSQL — 軽快なSQLクライアント" />
+    <meta
+      property="og:description"
+      content="データベース作業に必要なものを、ひとつの画面に。"
+    />
+    <meta name="twitter:card" content="summary" />
+    <title>TatamiSQL — 軽快なSQLクライアント</title>
+    <link rel="alternate" hreflang="en" href="../index.html" />
+    <link rel="alternate" hreflang="ja" href="./index.html" />
+    <link rel="alternate" hreflang="x-default" href="../index.html" />
+    <link rel="icon" href="../assets/tatamisql-icon.png" />
+    <link rel="apple-touch-icon" href="../assets/tatamisql-icon.png" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="TatamiSQL ホーム">
+          <img
+            class="brand-icon"
+            src="../assets/tatamisql-icon.png"
+            width="38"
+            height="38"
+            alt=""
+          />
+          <span>TatamiSQL</span>
+        </a>
+
+        <div class="header-actions">
+          <nav class="header-nav" aria-label="メインナビゲーション">
+            <a href="#features">特徴</a>
+            <a
+              href="https://github.com/githiroshi/TatamiSQL"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </nav>
+          <nav class="language-switcher" aria-label="言語">
+            <a href="../index.html" lang="en" hreflang="en">English</a>
+            <a
+              href="./index.html"
+              lang="ja"
+              hreflang="ja"
+              class="active"
+              aria-current="page"
+            >
+              日本語
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Desktop SQL client</p>
+            <h1><em>SQLをもっと軽やかに。</em></h1>
+            <p class="hero-description">
+              TatamiSQLはシンプルな操作で使えるSQLクライアントです。
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://github.com/githiroshi/TatamiSQL/releases/latest"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="apple-mark" aria-hidden="true">●</span>
+                macOS版をダウンロード
+                <span class="button-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="text-link" href="#features">
+                特徴を見る <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+            <p class="release-note">α版 / MySQL・PostgreSQL対応</p>
+          </div>
+
+          <div class="preview-wrap">
+            <div class="preview-glow" aria-hidden="true"></div>
+            <video
+              class="product-video"
+              src="../assets/tatami-preview.mp4"
+              aria-label="TatamiSQLのアプリ操作デモ"
+              autoplay
+              controls
+              loop
+              muted
+              playsinline
+              preload="metadata"
+            >
+              このブラウザはMP4動画に対応していません。
+            </video>
+            <p class="preview-caption">
+              <span></span> 操作デモ
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">CORE FEATURES</p>
+            <h2 id="features-title">マウス操作でSQLをもっと直感的に。</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">01</div>
+              <h3>マウス操作でJOIN</h3>
+              <p>
+                テーブル名をダブルクリックして候補を選択。結合条件付きのJOIN句をSQLへ追加。
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="../assets/join-picker.png"
+                  width="724"
+                  height="444"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQLのJOIN候補選択画面"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">02</div>
+              <h3>リストからカラム選択</h3>
+              <p>
+                SELECT * の「*」をダブルクリック。必要なカラムを選ぶと、SELECT句へ反映。
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="../assets/column-picker.png"
+                  width="642"
+                  height="556"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQLのカラム選択画面"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">03</div>
+              <h3>セルの内容をプレビュー</h3>
+              <p>
+                セルをダブルクリックすると内容を大きく表示。長文やJSONも見やすく確認。
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="../assets/cell-preview.png"
+                  width="826"
+                  height="520"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQLのJSONセルプレビュー画面"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card feature-card-tinted">
+              <div class="feature-icon" aria-hidden="true">04</div>
+              <h3>テーブル名をグルーピング</h3>
+              <p>
+                共通する名前ごとにテーブルをまとめて表示。テーブルが多い環境でも探しやすく。
+              </p>
+              <div class="feature-demo feature-image-demo">
+                <img
+                  class="feature-screenshot"
+                  src="../assets/table-grouping.png"
+                  width="546"
+                  height="428"
+                  loading="lazy"
+                  decoding="async"
+                  alt="TatamiSQLのグルーピングされたテーブル一覧"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="cta-pattern" aria-hidden="true"></div>
+            <img
+              src="../assets/tatamisql-icon.png"
+              width="72"
+              height="72"
+              alt=""
+            />
+            <p class="section-label">GET STARTED</p>
+            <h2>TatamiSQLを使ってみる。</h2>
+            <p>TatamiSQLで、日々のデータベース作業をシンプルに。</p>
+            <a
+              class="button button-light"
+              href="https://github.com/githiroshi/TatamiSQL/releases/latest"
+              target="_blank"
+              rel="noreferrer"
+            >
+              macOS版をダウンロード
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#" aria-label="TatamiSQL ホーム">
+          <img
+            class="brand-icon"
+            src="../assets/tatamisql-icon.png"
+            width="32"
+            height="32"
+            alt=""
+          />
+          <span>TatamiSQL</span>
+        </a>
+        <p>© <span id="copyright-year">2026</span> oyajikoumuten</p>
+        <a
+          href="https://github.com/githiroshi/TatamiSQL"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub ↗
+        </a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
